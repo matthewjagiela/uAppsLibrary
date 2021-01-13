@@ -10,7 +10,6 @@
 		2E42FCC425AEC31600D343E8 /* uAppsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42FCBA25AEC31600D343E8 /* uAppsLibrary.framework */; };
 		2E42FCC925AEC31600D343E8 /* uAppsLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FCC825AEC31600D343E8 /* uAppsLibraryTests.swift */; };
 		2E42FCCB25AEC31600D343E8 /* uAppsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E42FCBD25AEC31600D343E8 /* uAppsLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E42FCD725AEC35800D343E8 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FCD625AEC35800D343E8 /* TestFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +29,6 @@
 		2E42FCC325AEC31600D343E8 /* uAppsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uAppsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E42FCC825AEC31600D343E8 /* uAppsLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uAppsLibraryTests.swift; sourceTree = "<group>"; };
 		2E42FCCA25AEC31600D343E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E42FCD625AEC35800D343E8 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 		2E42FCBC25AEC31600D343E8 /* uAppsLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				2E42FD0A25AEC6CB00D343E8 /* Tester */,
 				2E42FCBD25AEC31600D343E8 /* uAppsLibrary.h */,
 				2E42FCBE25AEC31600D343E8 /* Info.plist */,
 			);
@@ -87,14 +84,6 @@
 				2E42FCCA25AEC31600D343E8 /* Info.plist */,
 			);
 			path = uAppsLibraryTests;
-			sourceTree = "<group>";
-		};
-		2E42FD0A25AEC6CB00D343E8 /* Tester */ = {
-			isa = PBXGroup;
-			children = (
-				2E42FCD625AEC35800D343E8 /* TestFile.swift */,
-			);
-			path = Tester;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E42FCD725AEC35800D343E8 /* TestFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +393,6 @@
 		2E42FCD225AEC31600D343E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uAppsLibraryTests/Info.plist;
@@ -424,7 +411,6 @@
 		2E42FCD325AEC31600D343E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCRTE5CC2K;
 				INFOPLIST_FILE = uAppsLibraryTests/Info.plist;
