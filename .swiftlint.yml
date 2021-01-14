@@ -1,0 +1,29 @@
+disabled_rules:
+- type_body_length
+- line_length
+- type_name
+- identifier_name
+- cyclomatic_complexity
+- function_body_length
+- file_length
+- trailing_whitespace
+- discouraged_direct_init
+- comment_spacing
+opt_in_rules:
+- empty_count
+- empty_string
+excluded:
+- Carthage
+- Pods
+- SwiftLint/Common/3rdPartyLib
+trailing whitespace:
+warning: 2
+error: 3
+ignores_function_declarations: true
+ignores_comments: true
+ignores_urls: true
+function_parameter_count:
+warning: 6
+error: 8
+ignore_comment_only_lines: true
+reporter: "xcode"
