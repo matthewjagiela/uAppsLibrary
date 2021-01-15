@@ -13,6 +13,7 @@
 		2E42FD9825AFC00E00D343E8 /* InternetLabelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FD9725AFC00E00D343E8 /* InternetLabelsManager.swift */; };
 		2E42FDAE25AFFB1D00D343E8 /* uAppsInternetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FDAD25AFFB1D00D343E8 /* uAppsInternetTests.swift */; };
 		2EB0F92E25B10CC300A5AEB5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EB0F92D25B10CC300A5AEB5 /* .swiftlint.yml */; };
+		2EB0F97E25B11A2F00A5AEB5 /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0F97D25B11A2F00A5AEB5 /* AppInformation.swift */; };
 		2EB0F99D25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0F99C25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift */; };
 		587798F6639C7EF565FD61F9 /* Pods_uAppsLibrary_uAppsLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B136F6CDE11189BA010B73 /* Pods_uAppsLibrary_uAppsLibraryTests.framework */; };
 		63D0EE4A91534DC27AB896D8 /* Pods_uAppsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A50A0233408260E792D6192 /* Pods_uAppsLibrary.framework */; };
@@ -40,6 +41,7 @@
 		2E42FD9725AFC00E00D343E8 /* InternetLabelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetLabelsManager.swift; sourceTree = "<group>"; };
 		2E42FDAD25AFFB1D00D343E8 /* uAppsInternetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uAppsInternetTests.swift; sourceTree = "<group>"; };
 		2EB0F92D25B10CC300A5AEB5 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		2EB0F97D25B11A2F00A5AEB5 /* AppInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
 		2EB0F99C25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperMessageHandler.swift; sourceTree = "<group>"; };
 		4A50A0233408260E792D6192 /* Pods_uAppsLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uAppsLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B136F6CDE11189BA010B73 /* Pods_uAppsLibrary_uAppsLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uAppsLibrary_uAppsLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				2E42FD9625AFBFF700D343E8 /* Internet */,
 				2E42FCBD25AEC31600D343E8 /* uAppsLibrary.h */,
 				2E42FCBE25AEC31600D343E8 /* Info.plist */,
+				2EB0F97D25B11A2F00A5AEB5 /* AppInformation.swift */,
 			);
 			path = uAppsLibrary;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB0F97E25B11A2F00A5AEB5 /* AppInformation.swift in Sources */,
 				2E42FD9825AFC00E00D343E8 /* InternetLabelsManager.swift in Sources */,
 				2EB0F99D25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift in Sources */,
 			);
