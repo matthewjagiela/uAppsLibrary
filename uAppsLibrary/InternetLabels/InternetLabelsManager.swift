@@ -7,19 +7,22 @@
 
 import Combine
 
-enum InternetJSONError: Error {
+public enum InternetJSONError: Error {
     case fetchError(Error)
     case decodeError
     case genericError
     case dataError
 }
 
-open class InternetLabelsManager {
+public class InternetLabelsManager {
+    public init() {
+        //used to make discoverable
+    }
     /**
      Used for devices that can handle iOS 13+
      */
     @available(iOS 13.0, *)
-    func fetchLabels() -> Future<InternetInformation, InternetJSONError> {
+    public func fetchLabels() -> Future<InternetInformation, InternetJSONError> {
         return Future { promise in
             if let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/master/uAppsInfo.json") {
                 URLSession.shared.dataTask(with: jsonURL) { data, _, error in
@@ -46,7 +49,7 @@ open class InternetLabelsManager {
     /**
      Call with iOS 12 and lower only for getting relevant information
      */
-    func legacyFetchLabels(completion: @escaping(InternetInformation) -> Void) {
+    public func legacyFetchLabels(completion: @escaping(InternetInformation) -> Void) {
         var internetInfo: InternetInformation?
         if let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/master/uAppsInfo.json") {
             URLSession.shared.dataTask(with: jsonURL) { data, _, error in
