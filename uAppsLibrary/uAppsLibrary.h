@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SnowScene.h"
 
 //! Project version number for uAppsLibrary.
 FOUNDATION_EXPORT double uAppsLibraryVersionNumber;

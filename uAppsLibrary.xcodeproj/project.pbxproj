@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E3EBD8B25BE7C39005970D0 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EBD8925BE7C39005970D0 /* SnowScene.m */; };
-		2E3EBD8C25BE7C39005970D0 /* SnowScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3EBD8A25BE7C39005970D0 /* SnowScene.h */; };
+		2E3EBD8C25BE7C39005970D0 /* SnowScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3EBD8A25BE7C39005970D0 /* SnowScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E3EBD9025BE7CE0005970D0 /* SnowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EBD8F25BE7CE0005970D0 /* SnowHandler.swift */; };
 		2E42FCC425AEC31600D343E8 /* uAppsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42FCBA25AEC31600D343E8 /* uAppsLibrary.framework */; };
 		2E42FCC925AEC31600D343E8 /* uAppsLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FCC825AEC31600D343E8 /* uAppsLibraryTests.swift */; };

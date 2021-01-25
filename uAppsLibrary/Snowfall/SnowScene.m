@@ -7,7 +7,6 @@
 //
 
 #import "SnowScene.h"
-∫
 
 @implementation SnowScene
 -(id)initWithSize:(CGSize)size {
