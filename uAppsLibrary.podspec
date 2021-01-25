@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
-  spec.resources = ['uAppsLibrary/*/**/*.{xib,storyboard,strings,xcassets}']
+  spec.resources = ['uAppsLibrary/*/**/*.{xib,storyboard,strings,xcassets,sks}']
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

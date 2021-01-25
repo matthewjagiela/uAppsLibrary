@@ -12,7 +12,7 @@
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         self.backgroundColor = [SKColor clearColor];
-        NSString *emitterPath = [[NSBundle mainBundle] pathForResource:@"Snow" ofType:@"sks"];
+        NSString *emitterPath = [[NSBundle mainBundle] pathForResource:@"uAppsLibrary.framework/Resources/Snow" ofType:@"sks"];
         SKEmitterNode *snow = [NSKeyedUnarchiver unarchiveObjectWithFile:emitterPath];
         snow.position = CGPointMake(CGRectGetMidX(self.frame), self.size.height);
         snow.targetNode = self.scene;

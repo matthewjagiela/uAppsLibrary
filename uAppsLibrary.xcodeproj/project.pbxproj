@@ -10,6 +10,7 @@
 		2E3EBD8B25BE7C39005970D0 /* SnowScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EBD8925BE7C39005970D0 /* SnowScene.m */; };
 		2E3EBD8C25BE7C39005970D0 /* SnowScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3EBD8A25BE7C39005970D0 /* SnowScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E3EBD9025BE7CE0005970D0 /* SnowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EBD8F25BE7CE0005970D0 /* SnowHandler.swift */; };
+		2E3EBE1525BE82DB005970D0 /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2E3EBE1425BE82DB005970D0 /* Snow.sks */; };
 		2E42FCC425AEC31600D343E8 /* uAppsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42FCBA25AEC31600D343E8 /* uAppsLibrary.framework */; };
 		2E42FCC925AEC31600D343E8 /* uAppsLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FCC825AEC31600D343E8 /* uAppsLibraryTests.swift */; };
 		2E42FCCB25AEC31600D343E8 /* uAppsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E42FCBD25AEC31600D343E8 /* uAppsLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		2E3EBD8925BE7C39005970D0 /* SnowScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowScene.m; sourceTree = "<group>"; };
 		2E3EBD8A25BE7C39005970D0 /* SnowScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowScene.h; sourceTree = "<group>"; };
 		2E3EBD8F25BE7CE0005970D0 /* SnowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowHandler.swift; sourceTree = "<group>"; };
+		2E3EBE1425BE82DB005970D0 /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
 		2E42FCBA25AEC31600D343E8 /* uAppsLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uAppsLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E42FCBD25AEC31600D343E8 /* uAppsLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uAppsLibrary.h; sourceTree = "<group>"; };
 		2E42FCBE25AEC31600D343E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,11 +88,20 @@
 			path = Snowfall;
 			sourceTree = "<group>";
 		};
+		2E3EBE1125BE82B3005970D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E3EBE1425BE82DB005970D0 /* Snow.sks */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		2E42FCB025AEC31600D343E8 = {
 			isa = PBXGroup;
 			children = (
 				2EB0F92D25B10CC300A5AEB5 /* .swiftlint.yml */,
 				2E42FCBC25AEC31600D343E8 /* uAppsLibrary */,
+				2E3EBE1125BE82B3005970D0 /* Resources */,
 				2E42FCC725AEC31600D343E8 /* uAppsLibraryTests */,
 				2E42FCBB25AEC31600D343E8 /* Products */,
 				F3FC41AD8674911E7D6E624F /* Pods */,
@@ -254,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3EBE1525BE82DB005970D0 /* Snow.sks in Resources */,
 				2EB0F92E25B10CC300A5AEB5 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
