@@ -65,8 +65,8 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
+   spec.ios.deployment_target = "9.0"
+   spec.osx.deployment_target = "10.15"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "uAppsLibrary/**/*.{swift, h, m}"
+  spec.source_files  = "uAppsLibrary/**/*.{swift,h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
-  spec.resources = ['uAppsLibrary/*/**/*.{xib,storyboard,strings,xcassets}']
+    spec.resources = ['uAppsLibrary/**/*.{png,sks,storyboard,xib,xcassets}']
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
