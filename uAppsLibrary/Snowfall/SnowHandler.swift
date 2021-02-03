@@ -8,19 +8,20 @@
 
 import SpriteKit
 
-enum Season: String {
+public enum Season: String {
     case spring
     case summer
     case fall
     case winter
 }
 
-class SnowHandler {
+public class SnowHandler {
+    public init() {} 
     func getMonth() -> Int {
         let calendar = Calendar.current
         return calendar.component(.month, from: Date()); //This is going to return the current month in a 1-12 format...
     }
-    func determineSeason() -> Season { //This is going to use the month to find out the current season.
+    public func determineSeason() -> Season { //This is going to use the month to find out the current season.
         let month = getMonth()
         if month >= 3 && month < 6 {
             return .spring
@@ -34,11 +35,11 @@ class SnowHandler {
         
     }
     
-    func shouldShowSnow() -> Bool {
+    public func shouldShowSnow() -> Bool {
         return determineSeason() == .winter ? true: false
     }
 
-    func setupSnowScene(view: SKView, size: CGSize) {
+    public func setupSnowScene(view: SKView, size: CGSize) {
         let snowScene = SnowScene(size: size)
         view.ignoresSiblingOrder = true
         snowScene.scaleMode = .resizeFill
