@@ -7,6 +7,7 @@ target 'uAppsLibrary' do
 
   # Pods for uAppsLibrary
   pod 'SwiftLint'
+  pod 'IQKeyboardManagerSwift', '6.5.6'
 
   target 'uAppsLibraryTests' do
     # Pods for testing

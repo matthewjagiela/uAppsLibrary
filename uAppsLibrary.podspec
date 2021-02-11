@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "uAppsLibrary"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of uAppsLibrary."
+  spec.version      = "1.1"
+  spec.summary      = "uApps Common Library"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -132,5 +132,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "IQKeyboardManagerSwift", "6.5.6"
 
 end
