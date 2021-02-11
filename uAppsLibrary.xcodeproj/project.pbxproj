@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		2E42FD9825AFC00E00D343E8 /* InternetLabelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FD9725AFC00E00D343E8 /* InternetLabelsManager.swift */; };
 		2E42FDAE25AFFB1D00D343E8 /* uAppsInternetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FDAD25AFFB1D00D343E8 /* uAppsInternetTests.swift */; };
 		2E5BEEE625CAF92A0099966A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5BEEE525CAF92A0099966A /* spark.png */; };
+		2E68201D25D4DBE60070F292 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E68201C25D4DBE60070F292 /* Feedback.storyboard */; };
+		2E68202325D4DC1B0070F292 /* FeedbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68202225D4DC1B0070F292 /* FeedbackModel.swift */; };
+		2E68205325D4DF0B0070F292 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68205225D4DF0B0070F292 /* FeedbackViewController.swift */; };
 		2EB0F92E25B10CC300A5AEB5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2EB0F92D25B10CC300A5AEB5 /* .swiftlint.yml */; };
 		2EB0F97E25B11A2F00A5AEB5 /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0F97D25B11A2F00A5AEB5 /* AppInformation.swift */; };
 		2EB0F99D25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0F99C25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift */; };
@@ -50,6 +53,9 @@
 		2E42FD9725AFC00E00D343E8 /* InternetLabelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetLabelsManager.swift; sourceTree = "<group>"; };
 		2E42FDAD25AFFB1D00D343E8 /* uAppsInternetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uAppsInternetTests.swift; sourceTree = "<group>"; };
 		2E5BEEE525CAF92A0099966A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		2E68201C25D4DBE60070F292 /* Feedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
+		2E68202225D4DC1B0070F292 /* FeedbackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackModel.swift; sourceTree = "<group>"; };
+		2E68205225D4DF0B0070F292 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		2EB0F92D25B10CC300A5AEB5 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		2EB0F97D25B11A2F00A5AEB5 /* AppInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
 		2EB0F99C25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperMessageHandler.swift; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 		2E42FCBC25AEC31600D343E8 /* uAppsLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				2E68201A25D4DBC60070F292 /* Feedback */,
 				2E3EBE1125BE82B3005970D0 /* Res */,
 				2E3EBD8825BE7BDE005970D0 /* Snowfall */,
 				2E42FD9625AFBFF700D343E8 /* Internet */,
@@ -150,6 +157,16 @@
 				2E42FD9725AFC00E00D343E8 /* InternetLabelsManager.swift */,
 			);
 			path = Internet;
+			sourceTree = "<group>";
+		};
+		2E68201A25D4DBC60070F292 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				2E68201C25D4DBE60070F292 /* Feedback.storyboard */,
+				2E68202225D4DC1B0070F292 /* FeedbackModel.swift */,
+				2E68205225D4DF0B0070F292 /* FeedbackViewController.swift */,
+			);
+			path = Feedback;
 			sourceTree = "<group>";
 		};
 		D9943B19B578F574EDDD0295 /* Frameworks */ = {
@@ -215,6 +232,7 @@
 				2E42FCBF25AEC31600D343E8 /* Sources */,
 				2E42FCC025AEC31600D343E8 /* Frameworks */,
 				2E42FCC125AEC31600D343E8 /* Resources */,
+				1B3A30C91E8E12E2EE953459 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +288,7 @@
 			files = (
 				2E3EBE1525BE82DB005970D0 /* Snow.sks in Resources */,
 				2E5BEEE625CAF92A0099966A /* spark.png in Resources */,
+				2E68201D25D4DBE60070F292 /* Feedback.storyboard in Resources */,
 				2EB0F92E25B10CC300A5AEB5 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +303,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B3A30C91E8E12E2EE953459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uAppsLibrary-uAppsLibraryTests/Pods-uAppsLibrary-uAppsLibraryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uAppsLibrary-uAppsLibraryTests/Pods-uAppsLibrary-uAppsLibraryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uAppsLibrary-uAppsLibraryTests/Pods-uAppsLibrary-uAppsLibraryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		22A071EED60B257A1A00231F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,8 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E68202325D4DC1B0070F292 /* FeedbackModel.swift in Sources */,
 				2EB0F97E25B11A2F00A5AEB5 /* AppInformation.swift in Sources */,
 				2E42FD9825AFC00E00D343E8 /* InternetLabelsManager.swift in Sources */,
+				2E68205325D4DF0B0070F292 /* FeedbackViewController.swift in Sources */,
 				2EB0F99D25B1FF1100A5AEB5 /* DeveloperMessageHandler.swift in Sources */,
 				2E3EBD9025BE7CE0005970D0 /* SnowHandler.swift in Sources */,
 				2E3EBD8B25BE7C39005970D0 /* SnowScene.m in Sources */,
