@@ -3,8 +3,9 @@
 //  uAppsLibrary
 //
 //  Created by Matthew Jagiela on 1/15/21.
-
+#if canImport(Combine)
 import Combine
+#endif
 
 public enum App {
     case uTime
@@ -13,7 +14,7 @@ public enum App {
 public class DeveloperMessage {
     fileprivate let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/messageme/uAppsInfo.json")
     public init() {}
-    
+    #if canImport(Combine) //TODO: Check if this becomes unneeded iOS 15
     @available(iOS 13.0, *)
     public func developerMessage() -> Future<Message, InternetJSONError> {
         return Future { promise in
@@ -38,7 +39,7 @@ public class DeveloperMessage {
             }
         }
     }
-    
+    #endif
     public func legacyDeveloperMessage(completion: @escaping(Message) -> Void) {
         var developerMessage: Message?
         if let jsonURL = self.jsonURL {
