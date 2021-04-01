@@ -190,6 +190,7 @@ extension UIViewController {
                         if #available(iOS 13.0, *) {
                             feedbackController = storyboard.instantiateViewController(identifier: "feedbackView") as FeedbackViewController
                         } else {
+                            //swiftlint:disable force_cast
                             feedbackController = storyboard.instantiateViewController(withIdentifier: "feedbackView") as! FeedbackViewController
                         }
                         UIViewController.feedbackPresented = true

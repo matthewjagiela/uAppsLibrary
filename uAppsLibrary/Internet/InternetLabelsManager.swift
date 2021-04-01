@@ -4,8 +4,9 @@
 //
 //  Created by Matthew Jagiela on 1/13/21.
 //
-
+#if canImport(Combine)
 import Combine
+#endif
 
 public enum InternetJSONError: Error {
     case fetchError(Error)
@@ -21,6 +22,7 @@ public class InternetLabelsManager {
     /**
      Used for devices that can handle iOS 13+
      */
+    #if canImport(Combine)
     @available(iOS 13.0, *)
     public func fetchLabels() -> Future<InternetInformation, InternetJSONError> {
         return Future { promise in
@@ -45,7 +47,7 @@ public class InternetLabelsManager {
             }
         }
     }
-    
+    #endif
     /**
      Call with iOS 12 and lower only for getting relevant information
      */
