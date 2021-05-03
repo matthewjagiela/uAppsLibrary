@@ -109,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				2EB0F92D25B10CC300A5AEB5 /* .swiftlint.yml */,
-				2E42FCBC25AEC31600D343E8 /* uAppsLibrary */,
-				2E42FCC725AEC31600D343E8 /* uAppsLibraryTests */,
+				2E566746264058000001E1C8 /* Source */,
+				2E5667472640580D0001E1C8 /* Tests */,
 				2E42FCBB25AEC31600D343E8 /* Products */,
 				F3FC41AD8674911E7D6E624F /* Pods */,
 				D9943B19B578F574EDDD0295 /* Frameworks */,
@@ -157,6 +157,22 @@
 				2E42FD9725AFC00E00D343E8 /* InternetLabelsManager.swift */,
 			);
 			path = Internet;
+			sourceTree = "<group>";
+		};
+		2E566746264058000001E1C8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2E42FCBC25AEC31600D343E8 /* uAppsLibrary */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2E5667472640580D0001E1C8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2E42FCC725AEC31600D343E8 /* uAppsLibraryTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		2E68201A25D4DBC60070F292 /* Feedback */ = {
@@ -551,7 +567,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uAppsLibrary/Info.plist;
+				INFOPLIST_FILE = Source/uAppsLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -580,7 +596,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uAppsLibrary/Info.plist;
+				INFOPLIST_FILE = Source/uAppsLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
