@@ -14,18 +14,7 @@ public enum App {
 public class DeveloperMessage {
     fileprivate let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/messageme/uAppsInfo.json")
     public init() {}
-
-    @available(iOS 15, *)
-    public func asyncDeveloperMessage() async throws -> Message {
-        guard let jsonURL = self.jsonURL else { throw InternetJSONError.genericError }
-        let (data, response) = try await URLSession.shared.data(for: URLRequest(url: jsonURL))
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw InternetJSONError.dataError}
-        let decoder = JSONDecoder()
-        guard let message = try? decoder.decode(Message.self, from: data) else { throw InternetJSONError.decodeError }
-        return message
-    }
-    
-    #if canImport(Combine)
+    #if canImport(Combine) //TODO: Check if this becomes unneeded iOS 15
     @available(iOS 13.0, *)
     public func developerMessage() -> Future<Message, InternetJSONError> {
         return Future { promise in
