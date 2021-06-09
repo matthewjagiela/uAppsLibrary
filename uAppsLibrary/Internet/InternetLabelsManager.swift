@@ -49,6 +49,19 @@ public class InternetLabelsManager {
     }
     #endif
     /**
+     Used for devices using iOS 15 + 
+     */
+    @available(iOS 15.0, *)
+    public func asyncInternetLabels() async throws -> InternetInformation {
+        guard let jsonURL = URL(string: "https://raw.githubusercontent.com/matthewjagiela/uApps-JSON/master/uAppsInfo.json") else { throw InternetJSONError.genericError }
+        let (data, response) = try await URLSession.shared.data(for: URLRequest(url: jsonURL))
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw InternetJSONError.dataError}
+        let decoder = JSONDecoder()
+        guard let internetInfo = try? decoder.decode(InternetInformation.self, from: data) else { throw InternetJSONError.decodeError }
+        return internetInfo
+    }
+    
+    /**
      Call with iOS 12 and lower only for getting relevant information
      */
     public func legacyFetchLabels(completion: @escaping(InternetInformation) -> Void) {

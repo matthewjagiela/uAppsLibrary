@@ -11,6 +11,7 @@ import Combine
 class uAppsInternetTests: XCTestCase {
     
     let handler = InternetLabelsManager()
+    let messageHandler = DeveloperMessage()
     var subscriptions: Set<AnyCancellable> = []
     
     func testInternetLabels() {
@@ -72,6 +73,18 @@ class uAppsInternetTests: XCTestCase {
             devMessageexpectation.fulfill()
         }
         waitForExpectations(timeout: 5)
+    }
+    
+    @available(iOS 15.0, *)
+    func testiOS15Async() async throws {
+        let information = try await handler.asyncInternetLabels()
+        XCTAssertNotNil(information.uAppsNews)
+    }
+    
+    @available(iOS 15, *) //TODO: Check on UT's async
+    func testAsyncMessage() async throws {
+        let message = try await self.messageHandler.asyncDeveloperMessage()
+        XCTAssertNotNil(message.uTimeMessage)
     }
 
 }
