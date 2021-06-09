@@ -7,24 +7,32 @@
 
 import CloudKit
 
+struct FormData {
+    let name: String
+    let type: String
+    var crash: Bool? = false
+    let body: String
+    let emailAddress: String
+}
+
 class FeedbackModel {
     public init() {}
     
     var feedbackMessage: NSString = ""
     let version: NSString = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? NSString ?? "X"
     let ticketOpen: NSNumber = 0 //0 = open 1 = closed
-    func submitBugReport(name: String, type: String, crash: Bool, details: String, emailAddress: String, completion: @escaping(Error?) -> Void) {
+    func submitBugReport(data: FormData, completion: @escaping(Error?) -> Void) {
         let publicDB  = CKContainer.default().publicCloudDatabase
         let bug = CKRecord(recordType: "Bug")
-        let bugName = name as NSString
-        let bugType = type as NSString
+        let bugName = data.name as NSString
+        let bugType = data.type as NSString
         var bugCrash = 0
-        if crash {
+        if data.crash ?? false {
             bugCrash = 1
         }
-        let bugDetails = details as NSString
-        if emailAddress.isEmpty {
-            let email = emailAddress as NSString
+        let bugDetails = data.body as NSString
+        if data.emailAddress.isEmpty {
+            let email = data.emailAddress as NSString
             bug.setObject(email, forKey: "email")
         }
         bug.setObject(bugName, forKey: "name")
@@ -43,13 +51,13 @@ class FeedbackModel {
         }
         
     }
-    func submitFeedback(name: String, type: String, feedback: String, emailAddress: String, completion: @escaping(Error?) -> Void) {
+    func submitFeedback(data: FormData, completion: @escaping(Error?) -> Void) {
         let publicDB = CKContainer.default().publicCloudDatabase
         let feedbackRecord = CKRecord(recordType: "Feedback")
-        let nameDB = name as NSString
-        let feedbackDB = feedback as NSString
-        if emailAddress.isEmpty {
-            let email = emailAddress as NSString
+        let nameDB = data.name as NSString
+        let feedbackDB = data.body as NSString
+        if data.emailAddress.isEmpty {
+            let email = data.emailAddress as NSString
             feedbackRecord.setObject(email, forKey: "email")
         }
         feedbackRecord.setObject(nameDB, forKey: "feedbackName")
