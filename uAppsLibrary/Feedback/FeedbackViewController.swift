@@ -66,7 +66,8 @@ class FeedbackViewController: UIViewController {
             }
         }
         if typePicker.selectedSegmentIndex == 0 {
-            feedbackHandler.submitBugReport(name: name, type: determineFeedbackType(), crash: crash, details: feedbackBody.text, emailAddress: email) { (error) in
+            let feedbackData = FormData(name: name, type: determineFeedbackType(), crash: crash, body: feedbackBody.text, emailAddress: email)
+            feedbackHandler.submitBugReport(data: feedbackData) { (error) in
                 if let _ = error {
                     let alert = UIAlertController(title: "Error Submitting Bug Report", message: "There was an error submitting the report. Please make sure you have access to the internet and are signed into iCloud to submit.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
@@ -83,9 +84,10 @@ class FeedbackViewController: UIViewController {
                 }
             }
         } else { //Feedback
-            feedbackHandler.submitFeedback(name: name, type: determineFeedbackType(), feedback: feedbackBody.text, emailAddress: email) { error in
+            let feedbackData = FormData(name: name, type: determineFeedbackType(), body: feedbackBody.text, emailAddress: email)
+            feedbackHandler.submitFeedback(data: feedbackData) { error in
                 if let _ = error {
-                    let alert = UIAlertController(title: "Error Submitting Bug Report", message: "There was an error submitting the report. Please make sure you have access to the internet and are signed into iCloud to submit.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Error Submitting Feedback", message: "There was an error submitting your feedback. Please make sure you have access to the internet and are signed into iCloud to submit.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
                     DispatchQueue.main.async {
                         self.submitProgress.stopAnimating()
